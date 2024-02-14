@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rexburg Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/weather.css">
+</head>
+<body>
+    <nav>
+        <ul id="views">
+                <li><button id="current">Current</button></li>
+                <li><button id="hour">Hourly</button></li>
+                <li><button id="day">3-day Forecast</button></li>
+              </ul>
+    </nav>
+    <h1 id="title">Rexburg Weather</h1>
+    <div id="current-view">
+        <h1 id="current-temp"></h1>
+        <h2 id="condition"></h2>
+        <img id="condition-img">
+        <h3 id="high-low"></h3>
+        <h3 id="feel-temp"></h3>
+    </div>
+    <div id="hour-view"></div>
+    <div id="day-view"></div>
+    <footer>
+    <p id="api"></p>
+    </footer>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
